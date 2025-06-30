@@ -1,0 +1,40 @@
+PART3
+
+Ethical Reflection: Bias & Fairness in the Breast Cancer Predictive Model
+Potential Biases in the Dataset
+If my predictive model (from Task 3) were deployed in a real company, biases could lead to unfair or harmful outcomes. Here’s how:
+
+Underrepresented Demographics
+
+The dataset might exclude certain age groups, ethnicities, or regions.
+
+Example: If most data comes from white women aged 50+, the model may perform poorly for younger Black/Asian women.
+
+Labeling Bias
+
+If "High" risk is mostly assigned based on old medical standards, newer/rare cancer types might be misclassified.
+
+Data Collection Bias
+
+Hospitals in wealthy areas may contribute more data, leading to skewed accuracy for low-income patients.
+
+How IBM AI Fairness 360 Can Help
+IBM AI Fairness 360 (AIF360) is an open-source toolkit that detects and mitigates bias. Here’s how I’d use it:
+
+Bias Detection
+
+AIF360 checks if the model favors one group (e.g., "High risk" predictions skewed toward older patients).
+
+Example: It could show that my model has higher false negatives for women under 40.
+
+Mitigation Techniques
+
+Re-weighting Data: Give more importance to underrepresented groups (e.g., younger patients).
+
+Adversarial Debiasing: Train the model to ignore biased features (e.g., zip code ≠ cancer risk).
+
+Fairness-aware Algorithms: Use AIF360’s built-in models (e.g., Reduced Bias Random Forest).
+
+Continuous Monitoring
+
+AIF360 can track model fairness in production and alert if bias creeps in over time.
