@@ -1,0 +1,33 @@
+ Part 3: Ethical Reflection 
+Bias Potential:
+
+Data imbalance → model favors majority class.
+
+Team location/department underrepresentation.
+
+Fairness Tools:
+
+IBM AI Fairness 360 detects & mitigates bias.
+
+Techniques: Reweighing, bias metrics, explainability.
+
+Bonus: Innovation Challenge
+Proposal: AI-Powered Code Comment Generator
+Purpose: Automatically generate clear, human-like comments for code blocks.
+
+Workflow:
+
+Parse source code (AST).
+
+Use LLM to summarize function logic.
+
+Insert docstrings/comments inline.
+
+Impact:
+
+Saves dev time.
+
+Enhances maintainability.
+
+Helps junior developers understand legacy code.
+
